@@ -1,0 +1,3 @@
+Simple script for extracting amine amounts from samples processed with ChemStation.
+
+Outputs a single .csv file.
