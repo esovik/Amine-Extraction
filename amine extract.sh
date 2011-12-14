@@ -4,7 +4,7 @@
 files=$(ls -la */REPORT.TXT | awk '{print $9}')
 
 ## Header for the .csv output
-echo "Sample name, Location, Date, Time, Octopamine, Dopamine, Tyramine, Serotonin" > report.csv
+echo "Sample name, Octopamine, Dopamine, Tyramine, Serotonin" > report.csv
 
 ## Extract the sample name (make sure this is meaningful), and quantity of Octopamine, Dopamine, Tyramine, and Serotonin. This has to match the names given in ChemStation, and it is case-sensitive.
 for file in $files
@@ -20,7 +20,7 @@ do
 done
 
 ## Add the lines below to the loop above to get injection location and date/time of your injections.
-## Don't forget to add $loc,$date, and $time the output line.
+## Don't forget to add $loc,$date, and $time the output line, and fix the header.
 
 #  loc=$(echo "$sample" | grep "Location" | awk '{print $8}' | sed 's/\(.*\)./\1/')
 #  date=$(echo "$sample" | grep "Date" | awk '{print $4}')
