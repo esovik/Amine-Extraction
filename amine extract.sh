@@ -18,3 +18,10 @@ do
 	output=$(echo "$name,$oct,$dop,$tyr,$ser" | tr -d "\n")
 	echo "$output" >> report.csv
 done
+
+## Add the lines below to the loop above to get injection location and date/time of your injections.
+## Don't forget to add $loc,$date, and $time the output line.
+
+#  loc=$(echo "$sample" | grep "Location" | awk '{print $8}' | sed 's/\(.*\)./\1/')
+#  date=$(echo "$sample" | grep "Date" | awk '{print $4}')
+#  time=$(echo "$sample" | grep "Date" | awk '{print $5}')
