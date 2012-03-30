@@ -10,4 +10,3 @@ More information is given in the .sh file.
 # To-do:
 
 * Move beyond amines (have the script detect compounds automatically from standards).
-* Re-write in perl for simplicity.
